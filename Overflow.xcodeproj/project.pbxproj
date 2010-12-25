@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		DDE49519126FFFCB00BAC606 /* Overflow */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DDE49527126FFFE800BAC606 /* Build configuration list for PBXAggregateTarget "Overflow" */;
+			buildPhases = (
+				DDE49518126FFFCB00BAC606 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Overflow;
+			productName = Overflow;
+		};
+		DDE4954112705E0500BAC606 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DDE4954612705E2E00BAC606 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				DDE4954012705E0500BAC606 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		DD146A6012B93EE900FA8984 /* control in Resources */ = {isa = PBXBuildFile; fileRef = DD14680712B93EE800FA8984 /* control */; };
+		DD146A6112B93EE900FA8984 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = DD14680812B93EE800FA8984 /* Makefile */; };
+		DD146A6512B93EE900FA8984 /* OverflowTweak.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD14680D12B93EE800FA8984 /* OverflowTweak.plist */; };
+		DD146AC612B93EE900FA8984 /* Tweak.xm in Resources */ = {isa = PBXBuildFile; fileRef = DD146A5F12B93EE900FA8984 /* Tweak.xm */; };
+		DD146AEF12B948E800FA8984 /* OverflowSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DD146AEE12B948E800FA8984 /* OverflowSettings.m */; };
+		DD99E36412C5812600189F69 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = DD99E36312C5812600189F69 /* Makefile */; };
+		DD99E36612C581C500189F69 /* CPlusFunctions.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD99E36512C581C500189F69 /* CPlusFunctions.mm */; };
+		DDE49515126FFF6C00BAC606 /* overflow.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDE494EB126FFF6C00BAC606 /* overflow.mm */; };
+		DDE49516126FFF6C00BAC606 /* OverflowSettings_old.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE494ED126FFF6C00BAC606 /* OverflowSettings_old.m */; };
+		DDE49529126FFFF000BAC606 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = DDE49528126FFFF000BAC606 /* Makefile */; };
+		DDE495E41271234D00BAC606 /* OFlowMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE495E31271234D00BAC606 /* OFlowMenu.m */; };
+		DDE498C3127136B800BAC606 /* overflowHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE498C0127136B800BAC606 /* overflowHelper.m */; };
+		DDE498C4127136B800BAC606 /* overflowHelperClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE498C2127136B800BAC606 /* overflowHelperClass.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Untitled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Untitled.app; path = "/Users/tomcool/DVLP/ATV2/Overflow/build/Debug-iphoneos/Untitled.app"; sourceTree = "<absolute>"; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* Untitled_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Untitled_Prefix.pch; sourceTree = "<group>"; };
+		DD14680712B93EE800FA8984 /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		DD14680812B93EE800FA8984 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DD14680D12B93EE800FA8984 /* OverflowTweak.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = OverflowTweak.plist; sourceTree = "<group>"; };
+		DD146A5F12B93EE900FA8984 /* Tweak.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tweak.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		DD146AC712B93F4B00FA8984 /* BRMenuItem_SMF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMenuItem_SMF.h; sourceTree = "<group>"; };
+		DD146AC812B93F4B00FA8984 /* NSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
+		DD146AC912B93F4B00FA8984 /* SMFBaseAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFBaseAsset.h; sourceTree = "<group>"; };
+		DD146ACA12B93F4B00FA8984 /* SMFCenteredMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFCenteredMenuController.h; sourceTree = "<group>"; };
+		DD146ACB12B93F4B00FA8984 /* SMFClockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFClockController.h; sourceTree = "<group>"; };
+		DD146ACC12B93F4B00FA8984 /* SMFColorSelectionMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFColorSelectionMenu.h; sourceTree = "<group>"; };
+		DD146ACD12B93F4B00FA8984 /* SMFCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFCommonTools.h; sourceTree = "<group>"; };
+		DD146ACE12B93F4B00FA8984 /* SMFController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFController.h; sourceTree = "<group>"; };
+		DD146ACF12B93F4B00FA8984 /* SMFDebAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFDebAsset.h; sourceTree = "<group>"; };
+		DD146AD012B93F4B00FA8984 /* SMFDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFDefines.h; sourceTree = "<group>"; };
+		DD146AD112B93F4B00FA8984 /* SMFEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFEvent.h; sourceTree = "<group>"; };
+		DD146AD212B93F4B00FA8984 /* SMFEventConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFEventConfiguration.h; sourceTree = "<group>"; };
+		DD146AD312B93F4B00FA8984 /* SMFEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFEventManager.h; sourceTree = "<group>"; };
+		DD146AD412B93F4B00FA8984 /* SMFFolderBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFFolderBrowser.h; sourceTree = "<group>"; };
+		DD146AD512B93F4B00FA8984 /* SMFFolderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFFolderDelegate.h; sourceTree = "<group>"; };
+		DD146AD612B93F4B00FA8984 /* SMFImageAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFImageAsset.h; sourceTree = "<group>"; };
+		DD146AD712B93F4B00FA8984 /* SMFInfoControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFInfoControl.h; sourceTree = "<group>"; };
+		DD146AD812B93F4B00FA8984 /* SMFInvocationCenteredMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFInvocationCenteredMenuController.h; sourceTree = "<group>"; };
+		DD146AD912B93F4B00FA8984 /* SMFMediaMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFMediaMenuController.h; sourceTree = "<group>"; };
+		DD146ADA12B93F4B00FA8984 /* SMFMediaPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFMediaPreview.h; sourceTree = "<group>"; };
+		DD146ADB12B93F4B00FA8984 /* SMFMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFMenuController.h; sourceTree = "<group>"; };
+		DD146ADC12B93F4B00FA8984 /* SMFMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFMenuItem.h; sourceTree = "<group>"; };
+		DD146ADD12B93F4B00FA8984 /* SMFMovieAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFMovieAsset.h; sourceTree = "<group>"; };
+		DD146ADE12B93F4B00FA8984 /* SMFPasscodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFPasscodeController.h; sourceTree = "<group>"; };
+		DD146ADF12B93F4B00FA8984 /* SMFPhotoMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFPhotoMethods.h; sourceTree = "<group>"; };
+		DD146AE012B93F4B00FA8984 /* SMFPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFPhotos.h; sourceTree = "<group>"; };
+		DD146AE112B93F4B00FA8984 /* SMFPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFPopup.h; sourceTree = "<group>"; };
+		DD146AE212B93F4B00FA8984 /* SMFPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFPreferences.h; sourceTree = "<group>"; };
+		DD146AE312B93F4B00FA8984 /* SMFProgressBarControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFProgressBarControl.h; sourceTree = "<group>"; };
+		DD146AE412B93F4B00FA8984 /* SMFProgressBarMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFProgressBarMenuItem.h; sourceTree = "<group>"; };
+		DD146AE512B93F4B00FA8984 /* SMFQueryMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFQueryMenu.h; sourceTree = "<group>"; };
+		DD146AE612B93F4B00FA8984 /* SMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFramework.h; sourceTree = "<group>"; };
+		DD146AE712B93F4B00FA8984 /* SMFScreenCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFScreenCapture.h; sourceTree = "<group>"; };
+		DD146AE812B93F4B00FA8984 /* SMFTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFTask.h; sourceTree = "<group>"; };
+		DD146AE912B93F4B00FA8984 /* SMFThemeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFThemeInfo.h; sourceTree = "<group>"; };
+		DD146AEA12B93F4B00FA8984 /* SMFVNCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFVNCServer.h; sourceTree = "<group>"; };
+		DD146AEB12B93F4B00FA8984 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		DD146AED12B948E800FA8984 /* OverflowSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflowSettings.h; sourceTree = "<group>"; };
+		DD146AEE12B948E800FA8984 /* OverflowSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflowSettings.m; sourceTree = "<group>"; };
+		DD99E36312C5812600189F69 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DD99E36512C581C500189F69 /* CPlusFunctions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CPlusFunctions.mm; sourceTree = "<group>"; };
+		DDABC49C127890D1001F026B /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		DDE494EB126FFF6C00BAC606 /* overflow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = overflow.mm; sourceTree = "<group>"; };
+		DDE494EC126FFF6C00BAC606 /* OverflowSettings_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverflowSettings_old.h; sourceTree = "<group>"; };
+		DDE494ED126FFF6C00BAC606 /* OverflowSettings_old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverflowSettings_old.m; sourceTree = "<group>"; };
+		DDE49528126FFFF000BAC606 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DDE495E21271234D00BAC606 /* OFlowMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OFlowMenu.h; sourceTree = "<group>"; };
+		DDE495E31271234D00BAC606 /* OFlowMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OFlowMenu.m; sourceTree = "<group>"; };
+		DDE498C0127136B800BAC606 /* overflowHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = overflowHelper.m; sourceTree = "<group>"; };
+		DDE498C1127136B800BAC606 /* overflowHelperClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overflowHelperClass.h; sourceTree = "<group>"; };
+		DDE498C2127136B800BAC606 /* overflowHelperClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = overflowHelperClass.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				DDDC81EC1273C30900192ADD /* SMFramework */,
+				DDE49528126FFFF000BAC606 /* Makefile */,
+				DD14680612B93EE800FA8984 /* overflowtweak */,
+				DDE498BF127136AA00BAC606 /* OverflowHelper */,
+				DDE494E9126FFF6C00BAC606 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* Untitled_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD14680612B93EE800FA8984 /* overflowtweak */ = {
+			isa = PBXGroup;
+			children = (
+				DD14680712B93EE800FA8984 /* control */,
+				DD14680812B93EE800FA8984 /* Makefile */,
+				DD14680D12B93EE800FA8984 /* OverflowTweak.plist */,
+				DD146A5F12B93EE900FA8984 /* Tweak.xm */,
+			);
+			path = overflowtweak;
+			sourceTree = "<group>";
+		};
+		DDDC81EC1273C30900192ADD /* SMFramework */ = {
+			isa = PBXGroup;
+			children = (
+				DD146AC712B93F4B00FA8984 /* BRMenuItem_SMF.h */,
+				DD146AC812B93F4B00FA8984 /* NSTask.h */,
+				DD146AC912B93F4B00FA8984 /* SMFBaseAsset.h */,
+				DD146ACA12B93F4B00FA8984 /* SMFCenteredMenuController.h */,
+				DD146ACB12B93F4B00FA8984 /* SMFClockController.h */,
+				DD146ACC12B93F4B00FA8984 /* SMFColorSelectionMenu.h */,
+				DD146ACD12B93F4B00FA8984 /* SMFCommonTools.h */,
+				DD146ACE12B93F4B00FA8984 /* SMFController.h */,
+				DD146ACF12B93F4B00FA8984 /* SMFDebAsset.h */,
+				DD146AD012B93F4B00FA8984 /* SMFDefines.h */,
+				DD146AD112B93F4B00FA8984 /* SMFEvent.h */,
+				DD146AD212B93F4B00FA8984 /* SMFEventConfiguration.h */,
+				DD146AD312B93F4B00FA8984 /* SMFEventManager.h */,
+				DD146AD412B93F4B00FA8984 /* SMFFolderBrowser.h */,
+				DD146AD512B93F4B00FA8984 /* SMFFolderDelegate.h */,
+				DD146AD612B93F4B00FA8984 /* SMFImageAsset.h */,
+				DD146AD712B93F4B00FA8984 /* SMFInfoControl.h */,
+				DD146AD812B93F4B00FA8984 /* SMFInvocationCenteredMenuController.h */,
+				DD146AD912B93F4B00FA8984 /* SMFMediaMenuController.h */,
+				DD146ADA12B93F4B00FA8984 /* SMFMediaPreview.h */,
+				DD146ADB12B93F4B00FA8984 /* SMFMenuController.h */,
+				DD146ADC12B93F4B00FA8984 /* SMFMenuItem.h */,
+				DD146ADD12B93F4B00FA8984 /* SMFMovieAsset.h */,
+				DD146ADE12B93F4B00FA8984 /* SMFPasscodeController.h */,
+				DD146ADF12B93F4B00FA8984 /* SMFPhotoMethods.h */,
+				DD146AE012B93F4B00FA8984 /* SMFPhotos.h */,
+				DD146AE112B93F4B00FA8984 /* SMFPopup.h */,
+				DD146AE212B93F4B00FA8984 /* SMFPreferences.h */,
+				DD146AE312B93F4B00FA8984 /* SMFProgressBarControl.h */,
+				DD146AE412B93F4B00FA8984 /* SMFProgressBarMenuItem.h */,
+				DD146AE512B93F4B00FA8984 /* SMFQueryMenu.h */,
+				DD146AE612B93F4B00FA8984 /* SMFramework.h */,
+				DD146AE712B93F4B00FA8984 /* SMFScreenCapture.h */,
+				DD146AE812B93F4B00FA8984 /* SMFTask.h */,
+				DD146AE912B93F4B00FA8984 /* SMFThemeInfo.h */,
+				DD146AEA12B93F4B00FA8984 /* SMFVNCServer.h */,
+				DD146AEB12B93F4B00FA8984 /* SynthesizeSingleton.h */,
+			);
+			name = SMFramework;
+			path = ../ATV2Includes/SMFramework;
+			sourceTree = "<group>";
+		};
+		DDE494E9126FFF6C00BAC606 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DD99E36512C581C500189F69 /* CPlusFunctions.mm */,
+				DDABC49C127890D1001F026B /* SynthesizeSingleton.h */,
+				DDE494EB126FFF6C00BAC606 /* overflow.mm */,
+				DDE494EC126FFF6C00BAC606 /* OverflowSettings_old.h */,
+				DDE494ED126FFF6C00BAC606 /* OverflowSettings_old.m */,
+				DDE495E21271234D00BAC606 /* OFlowMenu.h */,
+				DDE495E31271234D00BAC606 /* OFlowMenu.m */,
+				DD146AED12B948E800FA8984 /* OverflowSettings.h */,
+				DD146AEE12B948E800FA8984 /* OverflowSettings.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DDE498BF127136AA00BAC606 /* OverflowHelper */ = {
+			isa = PBXGroup;
+			children = (
+				DD99E36312C5812600189F69 /* Makefile */,
+				DDE498C0127136B800BAC606 /* overflowHelper.m */,
+				DDE498C1127136B800BAC606 /* overflowHelperClass.h */,
+				DDE498C2127136B800BAC606 /* overflowHelperClass.m */,
+			);
+			path = OverflowHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Untitled */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Untitled" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Untitled;
+			productName = Untitled;
+			productReference = 1D6058910D05DD3D006BFB54 /* Untitled.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Overflow" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Untitled */,
+				DDE49519126FFFCB00BAC606 /* Overflow */,
+				DDE4954112705E0500BAC606 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD146A6012B93EE900FA8984 /* control in Resources */,
+				DD146A6512B93EE900FA8984 /* OverflowTweak.plist in Resources */,
+				DD146AC612B93EE900FA8984 /* Tweak.xm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DDE49518126FFFCB00BAC606 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make clean\nmake stage";
+		};
+		DDE4954012705E0500BAC606 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "make clean\nmake install";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE49515126FFF6C00BAC606 /* overflow.mm in Sources */,
+				DDE49516126FFF6C00BAC606 /* OverflowSettings_old.m in Sources */,
+				DDE49529126FFFF000BAC606 /* Makefile in Sources */,
+				DDE495E41271234D00BAC606 /* OFlowMenu.m in Sources */,
+				DDE498C3127136B800BAC606 /* overflowHelper.m in Sources */,
+				DDE498C4127136B800BAC606 /* overflowHelperClass.m in Sources */,
+				DD146A6112B93EE900FA8984 /* Makefile in Sources */,
+				DD146AEF12B948E800FA8984 /* OverflowSettings.m in Sources */,
+				DD99E36412C5812600189F69 /* Makefile in Sources */,
+				DD99E36612C581C500189F69 /* CPlusFunctions.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Untitled_Prefix.pch;
+				INFOPLIST_FILE = "Untitled-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/overflowtweak/obj\"",
+					"\"$(SRCROOT)/overflowtweak/theos/bin\"",
+					"\"$(SRCROOT)/overflowtweak/theos/lib\"",
+				);
+				PRODUCT_NAME = Untitled;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Untitled_Prefix.pch;
+				INFOPLIST_FILE = "Untitled-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/overflowtweak/obj\"",
+					"\"$(SRCROOT)/overflowtweak/theos/bin\"",
+					"\"$(SRCROOT)/overflowtweak/theos/lib\"",
+				);
+				PRODUCT_NAME = Untitled;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+		DDE4951A126FFFCB00BAC606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Overflow;
+			};
+			name = Debug;
+		};
+		DDE4951B126FFFCB00BAC606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Overflow;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		DDE4954212705E0500BAC606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FW_DEVICE_IP = 10.0.1.11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = install;
+			};
+			name = Debug;
+		};
+		DDE4954312705E0500BAC606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = install;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Untitled" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Overflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE49527126FFFE800BAC606 /* Build configuration list for PBXAggregateTarget "Overflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE4951A126FFFCB00BAC606 /* Debug */,
+				DDE4951B126FFFCB00BAC606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE4954612705E2E00BAC606 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE4954212705E0500BAC606 /* Debug */,
+				DDE4954312705E0500BAC606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
