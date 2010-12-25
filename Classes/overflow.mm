@@ -95,7 +95,6 @@ static NSString * const kHiddenArray  = @"Hidden";
     NSEnumerator *plugEnum = [ATVPlugins objectEnumerator];
     id plugin;
     float i=0.;
-    NSMutableArray *objects=[[NSMutableArray alloc]init];
     NSArray *hidden = [[OverflowSettings preferences] objectForKey:kHiddenArray];
     while ((plugin=[plugEnum nextObject])!=nil) {
         if ([[plugin pathExtension] isEqualToString:@"frappliance"]) {
