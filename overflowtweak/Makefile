@@ -1,4 +1,6 @@
 include $(THEOS)/makefiles/common.mk
+THEOS_DEVICE_IP=apple-tv.local
+export $THEOS_DEVICE_IP
 
 TWEAK_NAME = bl_overflow
 bl_overflow_FILES = listener.mm

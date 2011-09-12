@@ -1,6 +1,6 @@
 Package: org.tomcool.overflow
 Name: Overflow
-Depends: beigelist(>=2.1-1), mobilesubstrate, org.tomcool.smframework(>=0.5.6)
+Depends: mobilesubstrate, org.tomcool.smframework(>=0.5.6), org.tomcool.overflow.tweak(>=1.0.0-10)
 Version: 1.1.0
 Architecture: iphoneos-arm
 Description: Think Categories for AppleTV
