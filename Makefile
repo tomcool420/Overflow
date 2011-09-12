@@ -1,6 +1,6 @@
 GO_EASY_ON_ME=1
-SDKVERSION=4.1
-FW_DEVICE_IP=appletv.local
+SDKVERSION=4.3
+FW_DEVICE_IP=apple-tv.local
 include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = Overflow
