@@ -1,7 +1,7 @@
 Package: org.tomcool.overflow
 Name: Overflow
-Depends: beigelist, mobilesubstrate, org.tomcool.smframework(>=0.5.6)
-Version: 1.0.0
+Depends: beigelist(>=2.1-1), mobilesubstrate, org.tomcool.smframework(>=0.5.6)
+Version: 1.1.0
 Architecture: iphoneos-arm
 Description: Think Categories for AppleTV
 Maintainer: Thomas Cool <thomas.cool@me.com>

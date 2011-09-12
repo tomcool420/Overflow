@@ -1,9 +1,9 @@
 Package: org.tomcool.overflow.tweak
 Name: Overflow Tweak
-Depends: mobilesubstrate
-Version: 0.0.1
+Depends: mobilesubstrate, org.tomcool.smframework(>=0.5.6)
+Version: 1.0.0
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: Thomas Cool
-Author: Thomas Cool
+Description: new beigelist compatible 4.1-4.3 and support for overflow
+Maintainer: Thomas Cool <thomas.cool@me.com>
+Author: Thomas Cool <thomas.cool@me.com>
 Section: Tweaks
