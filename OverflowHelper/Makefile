@@ -1,5 +1,5 @@
 
-SDKVERSION=4.1
+SDKVERSION=4.3
 FW_DEVICE_IP=appletv.local
 include $(THEOS)/makefiles/common.mk
 TOOL_NAME = OverflowHelper
